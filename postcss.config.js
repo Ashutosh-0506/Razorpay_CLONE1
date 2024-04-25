@@ -1,6 +1,14 @@
+// tailwind.config.js
 module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+  purge: {
+    content: ['./src/**/*.html'],
+    safelist: [
+      'bg-blue-500',
+      'text-center',
+      'hover:opacity-100',
+      // ...
+      'lg:text-right',
+    ]
   },
+  // ...
 }
